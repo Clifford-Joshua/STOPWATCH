@@ -1,0 +1,140 @@
+@media screen and (min-width:320px) and (max-width:600px) {
+  * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+nav {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  font-size: 25px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px red, 4px 4px 2px yellow, 6px 6px 2px blue;
+}
+.red {
+  color: red;
+}
+.color {
+  color: lawngreen;
+}
+section {
+  bottom: 0;
+  width: 100%;
+  height: 88vh;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+}
+.colors {
+  font-size: 35px;
+  color: lawngreen;
+}
+.number {
+  color: white;
+  font-size: 50px;
+}
+.btn_holder {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.btn {
+  color: white;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 8px;
+  box-shadow: 3px 2px white;
+  background-color: transparent;
+}
+.start:hover {
+  color: purple;
+  background-color: lawngreen;
+  box-shadow: 1px 2px 2px 5px white;
+}
+.reset:hover {
+  color: black;
+  background-color: white;
+  box-shadow: 1px 2px 2px 5px white;
+}
+.stop:hover {
+  color: aqua;
+  background-color: red;
+  box-shadow: 1px 2px 2px 5px white;
+}
+
+}
+@media screen and (min-width:600px) {
+  * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+nav {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  font-size: 25px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px red, 4px 4px 2px yellow, 6px 6px 2px blue;
+}
+.red {
+  color: red;
+}
+.color {
+  color: lawngreen;
+}
+section {
+  bottom: 0;
+  width: 100%;
+  height: 88vh;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+}
+.colors {
+  font-size: 35px;
+  color: lawngreen;
+}
+.number {
+  color: white;
+  font-size: 80px;
+}
+.btn_holder {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.btn {
+  color: white;
+  font-weight: 600;
+  padding: 10px 40px;
+  border-radius: 8px;
+  box-shadow: 3px 2px white;
+  background-color: transparent;
+}
+.start:hover {
+  color: purple;
+  background-color: lawngreen;
+  box-shadow: 1px 2px 2px 5px white;
+}
+.reset:hover {
+  color: black;
+  background-color: white;
+  box-shadow: 1px 2px 2px 5px white;
+}
+.stop:hover {
+  color: aqua;
+  background-color: red;
+  box-shadow: 1px 2px 2px 5px white;
+}
+
+}
