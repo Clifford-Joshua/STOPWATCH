@@ -1,42 +1,59 @@
-@media screen and (min-width:320px) and (max-width:600px) {
-  * {
+/* ====================================================== */
+/* Mobile View */
+
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 nav {
+  gap: 1rem;
   width: 100%;
-  height: 20vh;
+  height: 13vh;
   display: flex;
-  font-size: 25px;
+  font-size: 20px;
   align-items: center;
   justify-content: center;
-  box-shadow: 2px 2px red, 4px 4px 2px yellow, 6px 6px 2px blue;
 }
 .red {
   color: red;
+  text-shadow: 2px 2px 3px lawngreen;
 }
-.color {
+:is(.color, .colors) {
   color: lawngreen;
+  text-shadow: 2px 2px 3px red;
+}
+.redLine {
+  width: 100%;
+  height: 3px;
+  background-color: red;
+}
+.yellowLine {
+  width: 100%;
+  height: 3px;
+  background-color: yellow;
+}
+.blueLine {
+  width: 100%;
+  height: 3px;
+  background-color: blue;
 }
 section {
-  bottom: 0;
+  gap: 1rem;
   width: 100%;
-  height: 80vh;
   display: flex;
-  position: absolute;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   background-color: black;
+  height: calc(100vh - 13vh - 9px);
 }
 .colors {
-  font-size: 35px;
-  color: lawngreen;
+  font-size: 2rem;
 }
 .number {
   color: white;
-  font-size: 50px;
+  font-size: 3rem;
 }
 .btn_holder {
   width: 80%;
@@ -67,74 +84,19 @@ section {
   box-shadow: 1px 2px 2px 5px white;
 }
 
-}
-@media screen and (min-width:600px) {
-  * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-nav {
-  width: 100%;
-  height: 10vh;
-  display: flex;
-  font-size: 25px;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 2px 2px red, 4px 4px 2px yellow, 6px 6px 2px blue;
-}
-.red {
-  color: red;
-}
-.color {
-  color: lawngreen;
-}
-section {
-  bottom: 0;
-  width: 100%;
-  height: 88vh;
-  display: flex;
-  position: absolute;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  background-color: black;
-}
-.colors {
-  font-size: 35px;
-  color: lawngreen;
-}
-.number {
-  color: white;
-  font-size: 80px;
-}
-.btn_holder {
-  width: 50%;
-  display: flex;
-  justify-content: space-evenly;
-}
-.btn {
-  color: white;
-  font-weight: 600;
-  padding: 10px 40px;
-  border-radius: 8px;
-  box-shadow: 3px 2px white;
-  background-color: transparent;
-}
-.start:hover {
-  color: purple;
-  background-color: lawngreen;
-  box-shadow: 1px 2px 2px 5px white;
-}
-.reset:hover {
-  color: black;
-  background-color: white;
-  box-shadow: 1px 2px 2px 5px white;
-}
-.stop:hover {
-  color: aqua;
-  background-color: red;
-  box-shadow: 1px 2px 2px 5px white;
-}
-
+/* ============================================== */
+/* Ipad View */
+@media screen and (width >= 764px) {
+  nav {
+    font-size: 2rem;
+  }
+  .colors {
+    font-size: 3rem;
+  }
+  .number {
+    font-size: 4rem;
+  }
+  .btn {
+    font-size: 1.2rem;
+  }
 }
