@@ -62,6 +62,7 @@ section {
 }
 .btn {
   color: white;
+  cusor: pointer;
   font-weight: 600;
   padding: 8px 20px;
   border-radius: 8px;
